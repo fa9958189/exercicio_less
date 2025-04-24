@@ -1,6 +1,6 @@
 // header.less
 header {
-  background: #colors.get(~primary~);
+  background: map-get(@colors, primary);
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -26,10 +26,10 @@ header {
       }
       a {
         text-decoration: none;
-        color: #colors.get(~secondary~);
+        color: map-get(@colors, secondary);
         font-weight: @fontWeightBold;
         &:hover {
-          color: #colors.get(~accent~);
+          color: map-get(@colors, accent);
         }
       }
     }
